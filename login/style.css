@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "Comforta";
+    src: url("../assets/font/Comfortaa-VariableFont_wght.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    background: url("Fagua.jpg") no-repeat fixed;
+    background-position: 23% center;
+    background-size: cover;
+}
+
+
+
+/* --- --- --- Form --- --- --- */
+
+form {
+    width: 473px;
+    height: 162px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    animation: change-color 12s ease infinite;
+    display: flex;
+}
+
+input {
+    font-family: "Comforta";
+    font-size: 18px;
+    color: #fff;
+    background-color: #00000000;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    outline: none;
+}
+
+input::placeholder { color: #dadbdf; }
+
+input:focus {
+    border-bottom: 1px solid #fff;
+}
+
+input[type="password"] { margin-top: 20px; }
+
+img {
+    margin-right: 20px;
+    height: 100%;
+}
+
+
+
+
+@media screen and (max-width: 720px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form { position: static; }
+}
+
+
+
+
+
+@media screen and (max-width: 520px) {
+    form {
+        border-radius: 0;
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+    }
+
+    img {
+        height: 200px;
+        margin: 0 0 20px 0;
+    }
+}
+
+
+
+@keyframes change-color {
+    0% { background-color: #00085eb5; box-shadow: #00085e 0 0 9px; }
+    50% { background-color: #095b1fb5; box-shadow: #095b1f 0 0 9px; }
+    100% { background-color: #00085eb5; box-shadow: #00085e 0 0 9px; }
+}
