@@ -1,0 +1,68 @@
+<?php include "../../assets/scripts_php/validate-session.php"; ?>
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profe Miguel Ángel</title>
+        <link rel="shorcut icon" href="../../assets/img/Miguel.svg">
+        <link rel="stylesheet" href="../assets/style.css">
+
+        <link rel="stylesheet" href="../js/katex/katex.min.css">
+        <script src="../js/katex/katex.min.js"></script>
+
+        <style>
+            #literal { line-height: 50px; }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <a target="_blank" href="https://es.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:evaluating-functions/v/what-is-a-function"class="btn">Vídeos Teoría</a>
+            <a target="_blank" href="https://www.thatquiz.org/es-p/matematicas/conjuntos/"class="btn">ThatQuiz</a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=fyw11a4wDn8" class="btn">Historia</a>
+        </div>
+
+        <h1>CONCEPTO DE FUNCIÓN</h1>
+        <br>
+        <h2>Resolución de problemas</h2>
+        <br>
+        <div id="contenedor"></div>
+
+        <div class="center">
+            <div>
+                <div id="respuesta"></div>
+                <div id="contPuntos"></div>
+                <div id="escribir"></div>
+            </div>
+
+            <form id="inRespuesta">
+                <input type="text" maxlength="20">
+                
+                <input type="submit" value="Evaluar" id="btnEvaluar">
+            </form>
+        </div>
+
+        <br>
+        <h2>Laboratorio</h2>
+        <br>
+        <iframe src="https://phet.colorado.edu/sims/html/function-builder-basics/latest/function-builder-basics_es.html" width="800" height="600" scrolling="no" allowfullscreen></iframe>
+        <br>
+        <iframe src="https://www.geogebra.org/m/exmyBtvC" allowtransparency="true" width="800" height="650" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        <br>
+
+        <h2>Actividad de Vídeos</h2>
+        <p>Realise un resumen de los vídeos.</p>
+        <br>
+
+        <h2>Ejercicios</h2>
+        <br>
+        <p>Solucione los ejercicios propuestos en el botón de ThatQuiz.</p>
+
+        <script src="../js/escribeCalifica.js"></script>
+        <script src="js/7.js"></script>
+
+        <?php include "../../assets/scripts_php/logout/item-logout.php"; ?>
+    </body>
+</html>
