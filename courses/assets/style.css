@@ -1,0 +1,53 @@
+body{
+    background: url('../../assets/img/background/0.jpg');
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 150px;
+}
+
+/* --- --- --- Botones de cursos en index --- --- --- */
+
+div { margin: 5px; }
+
+.btn{
+    background-color:#246eb9;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .3s ease;
+}
+
+.naranja{
+    background-color:#f9a03f;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .3s ease;
+}
+
+.btn:hover{
+    background-color: #04a15c;
+}
+.naranja:hover{
+    background-color: #f7ff54;
+    color: #239b53;
+}
+
+h1, h2 { text-align: center; }
+object{
+    width: 800px;
+    height: 1000px;
+    display: block;
+    margin: 0 auto;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
